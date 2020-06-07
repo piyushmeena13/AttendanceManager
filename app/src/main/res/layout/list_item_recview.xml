@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="30dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Data structure"
+                android:textColor="#000000"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/attendance_percentage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="50%"
+                android:textColor="#000000"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete_red"
+                android:gravity="right"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_Details2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_Details"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Attendance:"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/class_attended"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:id="@+id/total_clases"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/10"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:layout_below="@id/ll_Details2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="On Track, You may leave next three class"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/Textview2"
+            android:layout_below="@id/ll_Details2"/>
+        <LinearLayout
+            android:id="@+id/ll_Details3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/status"
+            android:layout_below="@id/ll_Details2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/present"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_circle"
+                android:layout_weight="1"
+                android:padding="5dp"/>
+            <ImageView
+                android:id="@+id/absent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_remove_circle"
+                android:layout_weight="1"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

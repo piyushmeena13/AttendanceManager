@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/addSubject"
+            android:icon="@drawable/ic_person"
+            android:title="Add Subject" />
+        <item
+            android:id="@+id/EditAttendanceCriteria"
+            android:icon="@drawable/ic_person"
+            android:title="Edit Attendance Criteria" />
+        <item
+            android:id="@+id/Setting"
+            android:icon="@drawable/ic_settings"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/AboutUs"
+                android:icon="@drawable/ic_person"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
